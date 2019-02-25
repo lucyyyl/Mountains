@@ -133,9 +133,13 @@ public class ClubStats {
         System.out.println("The climber with the highest average climbs is: " + club.highestAverageClimber.getClimberName() + ". Their average climb height is: " + club.highestAverageClimber.getaverageHeight() + " metres." );
     }
 
+    // if you input a height it won't work the first time, if you then put like 1 all the climbs come up and then if you put 100 again it'll now work
     public static void overX(){
-        club.getAllOverX();
-        System.out.println("All the climbs recorded over X meters: ");
+        System.out.println("Enter height threshold you want to view climbs above:");
+        Scanner user_input = new Scanner(System.in);
+        double height = user_input.nextDouble();
+        club.getAllOverX(height);
+        System.out.println("All the climbs recorded over " + height + " meters: ");
         club.printAllOverX();
     }
 

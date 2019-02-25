@@ -43,10 +43,11 @@ public class Club {
         return highestClimber;
     }
 
-    public ArrayList<Mountain> getAllOverX() {
+    // or potentially done something wrong here
+    public ArrayList<Mountain> getAllOverX(double height) {
         for (Climber climber:climbers) {
-            climber.getClimbsOverX();
-            if (climber.climbsOverX.size() > 0) {
+            climber.getClimbsOverX(height);
+            if (climber.climbsOverX.size() > height) {
                 allOverX.addAll(climber.climbsOverX);
             } else {
                 continue;
