@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3792a0c6-8d55-44f3-8996-ae546aebb696" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/Climber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Climber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Club.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Club.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ClubStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ClubStats.java" afterDir="false" />
-    </list>
+    <list default="true" id="3792a0c6-8d55-44f3-8996-ae546aebb696" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -459,6 +455,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ClubStats.java">
       <provider selected="true" editor-type-id="text-editor">
