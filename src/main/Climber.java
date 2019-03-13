@@ -56,7 +56,6 @@ public class Climber {
         return averageHeight;
     }
 
-// Dunno if i'm feeding the height in wrong here
     public void getClimbsOverX(double height){
         for (Mountain climb : climbs){
             if (climb.getMountainHeight() > height){
@@ -65,11 +64,11 @@ public class Climber {
         }
     }
 
-//    public void printClimbsOverX(){
-//        for (Mountain climb: climbsOverX){
-//
-//            System.out.println("Mountain name: " + climb.getMountainName() +". Mountain height: " + climb.getMountainHeight() + ".");
-//        }
-//    }
+    public void printClimbsOverX(){
+        for (Mountain climb: climbsOverX){
+
+            System.out.println("Mountain name: " + climb.getMountainName() +". Mountain height: " + climb.getMountainHeight() + ".");
+        }
+    }
 
 }

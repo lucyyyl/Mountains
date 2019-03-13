@@ -125,21 +125,22 @@ public class ClubStats {
 
     public static void highestClimber(){
         club.getHighestClimber();
-        System.out.println("The climber with the highest climb is: " + club.highestClimber.getClimberName() + ". Their highest climb is: " + club.highestClimber.gethighestClimb().getMountainHeight() + " metres." );
+        System.out.println("The climber with the highest climb is: " + club.highestClimber.getClimberName() + ".");
+        System.out.println("Their highest climb is: " + club.highestClimber.gethighestClimb().getMountainHeight() + " metres." );
     }
 
     public static void highestAvgClimber(){
         club.getHighestAverageClimber();
-        System.out.println("The climber with the highest average climbs is: " + club.highestAverageClimber.getClimberName() + ". Their average climb height is: " + club.highestAverageClimber.getaverageHeight() + " metres." );
+        System.out.println("The climber with the highest average climbs is: " + club.highestAverageClimber.getClimberName() + ".");
+        System.out.println("Their average climb height is: " + club.highestAverageClimber.getaverageHeight() + " metres." );
     }
 
-    // if you input a height it won't work the first time, if you then put like 1 all the climbs come up and then if you put 100 again it'll now work
     public static void overX(){
         System.out.println("Enter height threshold you want to view climbs above:");
         Scanner user_input = new Scanner(System.in);
         double height = user_input.nextDouble();
-        club.getAllOverX(height);
         System.out.println("All the climbs recorded over " + height + " meters: ");
+        club.getAllOverX(height);
         club.printAllOverX();
     }
 

@@ -43,7 +43,6 @@ public class Club {
         return highestClimber;
     }
 
-    // or potentially done something wrong here
     public ArrayList<Mountain> getAllOverX(double height) {
         for (Climber climber:climbers) {
             climber.getClimbsOverX(height);
@@ -52,6 +51,11 @@ public class Club {
             } else {
                 continue;
             }
+        }
+        int i = 1;
+        for (Mountain mountain:allOverX){
+            System.out.println(i + ") Name: " + mountain.getMountainName() + ". Height: " + mountain.getMountainHeight() + ".");
+            i ++;
         }
         return allOverX;
     }
